@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, Sans-Serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.container {
+  background-color: white;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.balance {
+  text-align: center;
+}
+
+.income-expense {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.money {
+  font-size: 18px;
+}
+
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input,
+form select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form select {
+  appearance: none;  /* Remove default arrow */
+  background-color: #f4f4f4;
+  color: #333;
+  padding-right: 30px; /* Space for custom arrow */
+}
+
+form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 5px 0;
+  border-left: 5px solid;
+}
+
+.income {
+  border-color: green;
+}
+
+.expense {
+  border-color: red;
+}
+
+button.delete-btn, button.edit-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #dc3545;
+  color: white;
+}
+
+button.delete-btn:hover {
+  background-color: #c82333;
+}
+
+button.edit-btn {
+  background-color: #28a745;
+}
+
+button.edit-btn:hover {
+  background-color: #218838;
+}
+
+/* Style the select dropdown to make it look better */
+select {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  appearance: none;  /* Removes default styling */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+/* Print Button Styling */
+#print-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+#print-btn:hover {
+  background-color: #218838;
+}
+
+#print-btn:focus {
+  outline: none;
+}
+
+#print-btn:active {
+  background-color: #1e7e34;
+}
